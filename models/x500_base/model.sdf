@@ -17,6 +17,7 @@
         </inertia>
       </inertial>
       <gravity>true</gravity>
+      <enable_wind>true</enable_wind>
       <velocity_decay/>
       <visual name="base_link_visual">
         <pose>0 0 .025 0 0 3.141592654</pose>
@@ -292,6 +293,7 @@
     </link>
     <link name="rotor_0">
       <gravity>true</gravity>
+      <enable_wind>true</enable_wind>
       <self_collide>false</self_collide>
       <velocity_decay/>
       <pose>0.174 -0.174 0.06 0 0 0</pose>
@@ -364,6 +366,7 @@
     </joint>
     <link name="rotor_1">
       <gravity>true</gravity>
+      <enable_wind>true</enable_wind>
       <self_collide>false</self_collide>
       <velocity_decay/>
       <pose>-0.174 0.174 0.06 0 0 0</pose>
@@ -436,6 +439,7 @@
     </joint>
     <link name="rotor_2">
       <gravity>true</gravity>
+      <enable_wind>true</enable_wind>
       <self_collide>false</self_collide>
       <velocity_decay/>
       <pose>0.174 0.174 0.06 0 0 0</pose>
@@ -508,6 +512,7 @@
     </joint>
     <link name="rotor_3">
       <gravity>true</gravity>
+      <enable_wind>true</enable_wind>
       <self_collide>false</self_collide>
       <velocity_decay/>
       <pose>-0.174 -0.174 0.06 0 0 0</pose>

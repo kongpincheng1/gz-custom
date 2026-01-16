@@ -1,0 +1,158 @@
+    <model name='target_area'>
+      <!--
+        ******************************************************************
+        ***   您现在只需要修改下面这一行的 pose，就能移动所有物体！    ***
+        ******************************************************************
+      -->
+      <pose>2.5 0 0 0 0 0</pose> <!-- 世界坐标: X=32.5m, Y=0, Z=0 -->
+
+
+      <include>
+        <uri>model://cylinder_large</uri>
+        <name>large_cylinder_instance_1</name>
+        <!-- 相对姿态: 在父模型中心的基础上向前0.5m, 向左2.0m -->
+        <pose>0.5 -2.0 0 1.5708 0 0</pose>
+      </include>
+
+
+      <include>
+        <uri>model://cylinder_middle</uri>
+        <name>middle_cylinder_instance_1</name>
+        <!-- 相对姿态: 在父模型中心的基础上向前1.5m, Y不变 -->
+        <pose>-0.5 0.0 0 1.5708 0 0</pose>
+      </include>
+
+
+
+      <include>
+        <uri>model://cylinder_small</uri>
+        <name>small_cylinder_instance_1</name>
+        <!-- 相对姿态: 在父模型中心的基础上Y向右2.0m, X不变 -->
+        <pose>0 2.0 0 1.5708 0 0</pose>
+      </include>
+
+
+      <model name='yellow_boundary_box_child'>
+        <static>true</static>
+        <!-- 相对姿态: 就在父模型的中心 -->
+        <pose>0 0 0.025 0 0 0</pose>
+
+        <link name='line_back'>
+          <pose>-2.5 0 0 0 0 0</pose>
+          <visual name='visual'>
+            <geometry><box><size>0.05 8.0 0.05</size></box></geometry>
+            <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+          </visual>
+        </link>
+        <link name='line_front'>
+          <pose>2.5 0 0 0 0 0</pose>
+          <visual name='visual'>
+            <geometry><box><size>0.05 8.0 0.05</size></box></geometry>
+            <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+          </visual>
+        </link>
+        <link name='line_left'>
+          <pose>0 -4.0 0 0 0 0</pose>
+          <visual name='visual'>
+            <geometry><box><size>5.0 0.05 0.05</size></box></geometry>
+            <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+          </visual>
+        </link>
+        <link name='line_right'>
+          <pose>0 4.0 0 0 0 0</pose>
+          <visual name='visual'>
+            <geometry><box><size>5.0 0.05 0.05</size></box></geometry>
+            <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+          </visual>
+        </link>
+      </model>
+
+    </model>
+
+        <model name='target_area2'>
+      <!--
+        ******************************************************************
+        ***   您现在只需要修改下面这一行的 pose，就能移动所有物体！    ***
+        ******************************************************************
+      -->
+      <pose>8.5 0 0 0 0 0</pose> <!-- 世界坐标: X=32.5m, Y=0, Z=0 -->
+
+
+      <include>
+        <uri>model://cylinder_middle</uri>
+        <name>middle_cylinder_instance_1</name>
+        <!-- 相对姿态: 在父模型中心的基础上向前0.5m, 向左2.0m -->
+        <pose>0.5 -2.0 0 1.5708 0 0</pose>
+      </include>
+
+
+      <include>
+        <uri>model://cylinder_middle</uri>
+        <name>middle_cylinder_instance_2</name>
+        <!-- 相对姿态: 在父模型中心的基础上向前1.5m, Y不变 -->
+        <pose>-0.5 0.0 0 1.5708 0 0</pose>
+      </include>
+
+
+
+      <include>
+        <uri>model://cylinder_middle</uri>
+        <name>middle_cylinder_instance_3</name>
+        <!-- 相对姿态: 在父模型中心的基础上Y向右2.0m, X不变 -->
+        <pose>0 2.0 0 1.5708 0 0</pose>
+      </include>
+
+
+      <include>
+        <uri>model://cylinder_middle</uri>
+        <name>middle_cylinder_instance_4</name>
+        <!-- 相对姿态: 在父模型中心的基础上Y向右2.0m, X不变 -->
+        <pose>1.3 1.7 0 1.5708 0 0</pose>
+      </include>
+
+
+      <include>
+        <uri>model://cylinder_middle</uri>
+        <name>middle_cylinder_instance_5</name>
+        <!-- 相对姿态: 在父模型中心的基础上Y向右2.0m, X不变 -->
+        <pose>-0.6 -1.3 0 1.5708 0 0</pose>
+      </include>
+
+
+
+      <model name='yellow_boundary_box_child'>
+        <static>true</static>
+        <!-- 相对姿态: 就在父模型的中心 -->
+        <pose>0 0 0.025 0 0 0</pose>
+
+        <link name='line_back'>
+          <pose>-2.5 0 0 0 0 0</pose>
+          <visual name='visual'>
+            <geometry><box><size>0.05 8.0 0.05</size></box></geometry>
+            <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+          </visual>
+        </link>
+        <link name='line_front'>
+          <pose>2.5 0 0 0 0 0</pose>
+          <visual name='visual'>
+            <geometry><box><size>0.05 8.0 0.05</size></box></geometry>
+            <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+          </visual>
+        </link>
+        <link name='line_left'>
+          <pose>0 -4.0 0 0 0 0</pose>
+          <visual name='visual'>
+            <geometry><box><size>5.0 0.05 0.05</size></box></geometry>
+            <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+          </visual>
+        </link>
+        <link name='line_right'>
+          <pose>0 4.0 0 0 0 0</pose>
+          <visual name='visual'>
+            <geometry><box><size>5.0 0.05 0.05</size></box></geometry>
+            <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+          </visual>
+        </link>
+      </model>
+
+    </model>

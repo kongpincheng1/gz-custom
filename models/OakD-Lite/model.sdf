@@ -35,12 +35,12 @@
         </geometry>
       </collision>
       <sensor name="IMX214" type="camera">
-        <pose>0.01233 -0.03 .01878 0 0 0</pose>
+        <pose>0.11233 -0.03 .01878 0 1.570796 0</pose>
         <camera>
           <horizontal_fov>1.204</horizontal_fov>
           <image>
-            <width>1920</width>
-            <height>1080</height>
+            <width>640</width>
+            <height>480</height>
           </image>
           <clip>
             <near>0.1</near>
@@ -53,7 +53,7 @@
         <topic>camera</topic>
       </sensor>
       <sensor name="StereoOV7251" type="depth_camera">
-        <pose>0.01233 -0.03 .01878 0 0 0</pose>
+        <pose>0.11233 -0.03 .01878 0 1.570796 0</pose>
         <camera>
           <horizontal_fov>1.274</horizontal_fov>
           <image>
