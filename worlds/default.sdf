@@ -155,35 +155,6 @@
       <plugin name="Entity tree" filename="EntityTree"/>
     </gui>
 
-    <plugin name="gz::sim::systems::WindEffects" filename="gz-sim-wind-effects-system">
-      <horizontal>
-        <magnitude>
-          <!-- 风力大小变化的平滑过渡时间常数 -->
-          <time_for_rise>10</time_for_rise>
-          <!-- 平均风速，单位：米/秒 (m/s) -->
-          <mean>8.0</mean>
-          <!-- 为风速大小添加高斯噪声以实现随机化 -->
-          <noise type="gaussian">
-            <mean>0</mean>
-            <!-- 噪声的标准差。值越大，风速波动范围越大 -->
-            <stddev>1.5</stddev>
-          </noise>
-        </magnitude>
-        <direction>
-          <!-- 风向变化的平滑过渡时间常数 -->
-          <time_for_rise>10</time_for_rise>
-          <!-- 平均风向，单位：弧度 (radians) -->
-          <mean>1.57</mean> <!-- ~90度角 -->
-          <!-- 为风向添加高斯噪声以实现随机化 -->
-          <noise type="gaussian">
-            <mean>0</mean>
-            <!-- 噪声的标准差。值越大，风向变化越剧烈 -->
-            <stddev>0.2</stddev>
-          </noise>
-        </direction>
-      </horizontal>
-    </plugin>
-
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type="adiabatic"/>
@@ -265,7 +236,7 @@
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
       <latitude_deg>24.711733</latitude_deg>
-      <longitude_deg>118.431692</longitude_deg>
+      <longitude_deg>118.431692</longitude_deg>  <!--此处将经纬度设置为国内的一个学校操场-->
       <elevation>0</elevation>
     </spherical_coordinates>
     <model name='target_area'>
@@ -274,7 +245,7 @@
         ***   您现在只需要修改下面这一行的 pose，就能移动所有物体！    ***
         ******************************************************************
       -->
-      <pose>2.5 0 0 0 0 0</pose> <!-- 世界坐标: X=32.5m, Y=0, Z=0 -->
+      <pose>2.5 0 0 0 0 0</pose> <!-- 世界坐标: X=2.5m, Y=0, Z=0 -->
 
 
       <include>
@@ -345,7 +316,7 @@
         ***   您现在只需要修改下面这一行的 pose，就能移动所有物体！    ***
         ******************************************************************
       -->
-      <pose>8.5 0 0 0 0 0</pose> <!-- 世界坐标: X=32.5m, Y=0, Z=0 -->
+      <pose>8.5 0 0 0 0 0</pose> <!-- 世界坐标: X=8.5m, Y=0, Z=0 -->
 
 
       <include>
